@@ -115,7 +115,8 @@ export class TooltipComponent {
     }
 
     if (this.placement === 'left' || this.placement === 'right') {
-      this.hostStyleTop = (this.elementPosition.top + scrollY) + elementHeight / 2 - tooltip.clientHeight / 2 + 'px';
+      this.hostStyleTop = (this.elementPosition.top + scrollY) - tooltip.clientHeight / 2 + 'px';
+      //this.hostStyleTop = (this.elementPosition.top + scrollY) + elementHeight / 2 - tooltip.clientHeight / 2 + 'px';
     }
   }
 
